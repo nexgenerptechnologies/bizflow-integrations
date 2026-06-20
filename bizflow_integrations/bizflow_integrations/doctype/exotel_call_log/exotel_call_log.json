@@ -1,0 +1,15 @@
+﻿{
+    "name": "Exotel Call Log",
+    "module": "BizFlow Integrations",
+    "custom": 0,
+    "doctype": "DocType",
+    "permissions": [ { "write": 0, "create": 0, "read": 1, "role": "System Manager" } ],
+    "fields": [
+        { "label": "Call SID", "fieldname": "call_sid", "fieldtype": "Data", "in_list_view": 1 },
+        { "label": "From Number", "fieldname": "from_number", "fieldtype": "Data", "in_list_view": 1 },
+        { "label": "To Number", "fieldname": "to_number", "fieldtype": "Data", "in_list_view": 1 },
+        { "label": "Status", "fieldname": "status", "fieldtype": "Data", "in_list_view": 1 },
+        { "label": "Duration (Sec)", "fieldname": "duration", "fieldtype": "Int", "in_list_view": 1 },
+        { "label": "Recording URL", "fieldname": "recording_url", "fieldtype": "Data" }
+    ]
+}

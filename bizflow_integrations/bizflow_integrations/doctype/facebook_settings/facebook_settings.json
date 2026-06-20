@@ -1,0 +1,14 @@
+﻿{
+    "name": "Facebook Settings",
+    "module": "BizFlow Integrations",
+    "custom": 0,
+    "doctype": "DocType",
+    "issingle": 1,
+    "permissions": [ { "write": 1, "create": 1, "read": 1, "role": "System Manager" } ],
+    "fields": [
+        { "label": "App ID", "fieldname": "app_id", "fieldtype": "Data", "reqd": 1 },
+        { "label": "App Secret", "fieldname": "app_secret", "fieldtype": "Password", "reqd": 1 },
+        { "label": "Page Access Token", "fieldname": "page_access_token", "fieldtype": "Password", "reqd": 1 },
+        { "label": "Webhook Verify Token", "fieldname": "verify_token", "fieldtype": "Data", "reqd": 1 }
+    ]
+}

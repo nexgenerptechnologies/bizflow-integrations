@@ -1,0 +1,14 @@
+﻿{
+    "name": "Exotel Settings",
+    "module": "BizFlow Integrations",
+    "custom": 0,
+    "doctype": "DocType",
+    "issingle": 1,
+    "permissions": [ { "write": 1, "create": 1, "read": 1, "role": "System Manager" } ],
+    "fields": [
+        { "label": "Exotel SID", "fieldname": "exotel_sid", "fieldtype": "Data", "reqd": 1 },
+        { "label": "Exotel Token", "fieldname": "exotel_token", "fieldtype": "Password", "reqd": 1 },
+        { "label": "Exotel API Key", "fieldname": "exotel_api_key", "fieldtype": "Data", "reqd": 1 },
+        { "label": "Exotel Virtual Number", "fieldname": "virtual_number", "fieldtype": "Data", "reqd": 1 }
+    ]
+}
