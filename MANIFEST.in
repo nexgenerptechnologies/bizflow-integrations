@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include bizflow_integrations *.css
+recursive-include bizflow_integrations *.csv
+recursive-include bizflow_integrations *.html
+recursive-include bizflow_integrations *.ico
+recursive-include bizflow_integrations *.js
+recursive-include bizflow_integrations *.json
+recursive-include bizflow_integrations *.md
+recursive-include bizflow_integrations *.png
+recursive-include bizflow_integrations *.py
+recursive-include bizflow_integrations *.svg
+recursive-include bizflow_integrations *.txt
+recursive-exclude bizflow_integrations *.pyc
