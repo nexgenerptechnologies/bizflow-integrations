@@ -1,45 +1,46 @@
-{
+﻿{
+    "name":  "WhatsApp Settings",
+    "module":  "BizFlow Integrations",
+    "custom":  0,
+    "doctype":  "DocType",
+    "issingle":  1,
+    "permissions":  [ { "write":  1, "create":  1, "read":  1, "role":  "System Manager" } ],
     "fields":  [
                    {
                        "label":  "Provider",
                        "fieldtype":  "Select",
                        "reqd":  1,
-                       "options":  "Meta Cloud API\nWATI\nInterakt",
+                       "options":  "Unofficial (WhatsJet / Codecanyon)\nOfficial Meta Cloud API",
                        "fieldname":  "provider"
                    },
                    {
-                       "label":  "API URL",
+                       "label":  "API URL / Base URL",
                        "fieldtype":  "Data",
-                       "fieldname":  "api_url"
+                       "fieldname":  "api_url",
+                       "depends_on":  "eval:doc.provider == 'Unofficial (WhatsJet / Codecanyon)'"
+                   },
+                   {
+                       "label":  "Vendor UID",
+                       "fieldtype":  "Data",
+                       "fieldname":  "vendor_uid",
+                       "depends_on":  "eval:doc.provider == 'Unofficial (WhatsJet / Codecanyon)'"
+                   },
+                   {
+                       "label":  "Instance ID",
+                       "fieldtype":  "Data",
+                       "fieldname":  "instance_id",
+                       "depends_on":  "eval:doc.provider == 'Unofficial (WhatsJet / Codecanyon)'"
+                   },
+                   {
+                       "label":  "Phone Number ID (Meta Only)",
+                       "fieldtype":  "Data",
+                       "fieldname":  "phone_number_id",
+                       "depends_on":  "eval:doc.provider == 'Official Meta Cloud API'"
                    },
                    {
                        "label":  "Access Token",
                        "fieldtype":  "Password",
                        "fieldname":  "access_token"
-                   },
-                   {
-                       "label":  "Phone Number ID (Meta Only)",
-                       "fieldtype":  "Data",
-                       "fieldname":  "phone_number_id"
-                   },
-                   {
-                       "label":  "Enable Webhooks",
-                       "fieldtype":  "Check",
-                       "default":  "1",
-                       "fieldname":  "enable_webhooks"
                    }
-               ],
-    "name":  "WhatsApp Settings",
-    "custom":  0,
-    "doctype":  "DocType",
-    "permissions":  [
-                        {
-                            "write":  1,
-                            "create":  1,
-                            "read":  1,
-                            "role":  "System Manager"
-                        }
-                    ],
-    "module":  "BizFlow Integrations",
-    "issingle":  1
+               ]
 }
