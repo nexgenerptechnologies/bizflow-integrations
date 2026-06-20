@@ -1,0 +1,45 @@
+{
+    "fields":  [
+                   {
+                       "label":  "Provider",
+                       "fieldtype":  "Select",
+                       "reqd":  1,
+                       "options":  "Meta Cloud API\nWATI\nInterakt",
+                       "fieldname":  "provider"
+                   },
+                   {
+                       "label":  "API URL",
+                       "fieldtype":  "Data",
+                       "fieldname":  "api_url"
+                   },
+                   {
+                       "label":  "Access Token",
+                       "fieldtype":  "Password",
+                       "fieldname":  "access_token"
+                   },
+                   {
+                       "label":  "Phone Number ID (Meta Only)",
+                       "fieldtype":  "Data",
+                       "fieldname":  "phone_number_id"
+                   },
+                   {
+                       "label":  "Enable Webhooks",
+                       "fieldtype":  "Check",
+                       "default":  "1",
+                       "fieldname":  "enable_webhooks"
+                   }
+               ],
+    "name":  "WhatsApp Settings",
+    "custom":  0,
+    "doctype":  "DocType",
+    "permissions":  [
+                        {
+                            "write":  1,
+                            "create":  1,
+                            "read":  1,
+                            "role":  "System Manager"
+                        }
+                    ],
+    "module":  "BizFlow Integrations",
+    "issingle":  1
+}
