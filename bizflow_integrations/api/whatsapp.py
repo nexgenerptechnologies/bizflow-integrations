@@ -1,4 +1,4 @@
-﻿import frappe
+import frappe
 import requests
 
 @frappe.whitelist()
@@ -10,7 +10,7 @@ def send_whatsapp_message(phone, message):
     
     provider = settings.provider
     
-    if provider == "Unofficial (WhatsJet / Codecanyon)":
+    if provider == "Custom Self-Hosted API":
         base_url = settings.api_url.strip("/") if settings.api_url else ""
         vendor_uid = settings.vendor_uid
         instance = settings.instance_id
@@ -73,3 +73,4 @@ def log_whatsapp_message(phone, message, status, provider):
         "status": status
     }).insert(ignore_permissions=True)
     frappe.db.commit()
+

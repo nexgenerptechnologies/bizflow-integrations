@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "WhatsApp Settings",
     "module":  "BizFlow Integrations",
     "custom":  0,
@@ -10,26 +10,26 @@
                        "label":  "Provider",
                        "fieldtype":  "Select",
                        "reqd":  1,
-                       "options":  "Unofficial (WhatsJet / Codecanyon)\nOfficial Meta Cloud API",
+                       "options":  "Custom Self-Hosted API\nOfficial Meta Cloud API",
                        "fieldname":  "provider"
                    },
                    {
                        "label":  "API URL / Base URL",
                        "fieldtype":  "Data",
                        "fieldname":  "api_url",
-                       "depends_on":  "eval:doc.provider == 'Unofficial (WhatsJet / Codecanyon)'"
+                       "depends_on":  "eval:doc.provider == 'Custom Self-Hosted API'"
                    },
                    {
                        "label":  "Vendor UID",
                        "fieldtype":  "Data",
                        "fieldname":  "vendor_uid",
-                       "depends_on":  "eval:doc.provider == 'Unofficial (WhatsJet / Codecanyon)'"
+                       "depends_on":  "eval:doc.provider == 'Custom Self-Hosted API'"
                    },
                    {
                        "label":  "Instance ID",
                        "fieldtype":  "Data",
                        "fieldname":  "instance_id",
-                       "depends_on":  "eval:doc.provider == 'Unofficial (WhatsJet / Codecanyon)'"
+                       "depends_on":  "eval:doc.provider == 'Custom Self-Hosted API'"
                    },
                    {
                        "label":  "Phone Number ID (Meta Only)",
@@ -44,3 +44,4 @@
                    }
                ]
 }
+

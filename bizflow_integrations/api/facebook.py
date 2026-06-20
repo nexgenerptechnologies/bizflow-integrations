@@ -1,4 +1,4 @@
-﻿import frappe
+import frappe
 import requests
 
 @frappe.whitelist(allow_guest=True)
