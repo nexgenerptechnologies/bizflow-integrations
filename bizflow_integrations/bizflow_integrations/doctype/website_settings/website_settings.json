@@ -1,0 +1,38 @@
+﻿{
+ "actions": [],
+ "creation": "2026-06-21 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "webhook_secret_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "webhook_secret_key",
+   "fieldtype": "Data",
+   "label": "webhook secret key"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-06-21 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "bizflow_integrations",
+ "name": "Website Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
